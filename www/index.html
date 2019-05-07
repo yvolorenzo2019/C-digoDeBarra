@@ -16,17 +16,26 @@
   <link rel="stylesheet" href="css/style.css">
 
   <script>
-     function scanBarcode() {
-        window.plugins.barcodeScanner.scan( function(result) {
-                alert("We got a barcode\n" +
-                          "Result: " + result.text + "\n" +
-                          "Format: " + result.format + "\n" +
-                          "Cancelled: " + result.cancelled);
-            }, function(error) {
-                alert("Scanning failed: " + error);
-            }
-        );
+function retorno()
+{
 
+}
+
+    function scanBarcode(){
+  window.plugins.barcodeScanner.scan(function(result){
+      if(result.text == "280720550"){
+                  navigator.notification.alert("Valor: R$ 3.499,00 Descrição: Processador A12 Bionic com arquitetura de 64 bits Neural Engine Coprocessador M12 integrado Sistema operacional iOS Tamanho da tela 7.9 Tecnologia Wi-Fi Resolução da câmera - Câmera traseira: 8MP; - Câmera frontal: 7MP GPS Sim Grava vídeos Sim Câmera traseira Sim Câmera frontal Sim Memória Flash 64 GB Funciona como celular: Não",retorno,"iPad Mini Wi-Fi 64Gb - Cinza Espacial","Fechar");
+                  
+              }
+
+    alert("Código de Barra\n" + 
+              "Resultado:" + result.text + "\n" +
+              "Formato:" + result.format + "\n" +
+              "Cancelado:" + result.cancelled);
+          }, function(error){
+                alert("Erro:" + error);
+          }
+       );
     }
 
   </script>
@@ -42,6 +51,10 @@
        <div class="row">
          <div class="col-xs-12">
            <button class="btn-lg btn-block btn-primary" id="" onclick="scanBarcode()">Ler Código de Barra</button>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-xs-12" id="IMG">
          </div>
        </div>
    </div>
