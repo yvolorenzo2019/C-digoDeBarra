@@ -16,12 +16,34 @@
   <link rel="stylesheet" href="css/style.css">
 
   <script>
-    ons.ready(function() {
-      console.log("Onsen UI is ready!");
-    });
+     function scanBarcode() {
+        window.plugins.barcodeScanner.scan( function(result) {
+                alert("We got a barcode\n" +
+                          "Result: " + result.text + "\n" +
+                          "Format: " + result.format + "\n" +
+                          "Cancelled: " + result.cancelled);
+            }, function(error) {
+                alert("Scanning failed: " + error);
+            }
+        );
+
+    }
+
   </script>
+
 </head>
 <body>
-  This is a template for Onsen UI app.
+   <div class="container">
+     <div class="row">
+       <div class="col-xs-12">
+         <h1>Leitor De Código de Barras</h1>
+       </div>
+       </div>
+       <div class="row">
+         <div class="col-xs-12">
+           <button class="btn-lg btn-block btn-primary" id="" onclick="scanBarcode()">Ler Código de Barra</button>
+         </div>
+       </div>
+   </div>
 </body>
 </html>
