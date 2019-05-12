@@ -24,9 +24,13 @@ function retorno()
     function scanBarcode(){
   window.plugins.barcodeScanner.scan(function(result){
       if(result.text == "280720550"){
-                  //navigator.notification.alert("Valor: R$ 3.499,00 Descrição: Processador A12 Bionic com arquitetura de 64 bits Neural Engine Coprocessador M12 integrado Sistema operacional iOS Tamanho da tela 7.9 Tecnologia Wi-Fi Resolução da câmera - Câmera traseira: 8MP; - Câmera frontal: 7MP GPS Sim Grava vídeos Sim Câmera traseira Sim Câmera frontal Sim Memória Flash 64 GB Funciona como celular: Não",retorno,"iPad Mini Wi-Fi 64Gb - Cinza Espacial","Fechar");
-                  
+                document.getElementById("processador").innerHTML = " A12 Bionic com arquitetura de 64 bits Neural Engine Coprocessador M12 integrado ";
+
               }
+       else if(result.text == "989895555"){
+             document.getElementById("processador").innerHTML = "  Octa Core 1.8GHz ";
+
+       }       
 
     alert("Código de Barra\n" + 
               "Resultado:" + result.text + "\n" +
@@ -61,7 +65,7 @@ function retorno()
        <div class="row">
          <div class="col-xs-6">
            <p>Processador :</p>
-           <p>Sistema Operacional :</p>
+           <p>Sistema Operacional:</p>
            <p>Tela :</p>
            <p>GPS :</p>
            <p>Memoria Interna :</p>
