@@ -24,7 +24,7 @@ function retorno()
     function scanBarcode(){
   window.plugins.barcodeScanner.scan(function(result){
       if(result.text == "280720550"){
-                document.getElementById("imgCel").src = ('IMG/A.png');
+                document.getElementById("imgCel").src = ('IMG/ipad.jpg');
                 document.getElementById("Nome").innerHTML = " iPad Mini Wi-Fi 64Gb - Cinza Espacial";
                 document.getElementById("Valor").innerHTML = "R$ 3.499,00";
                 document.getElementById("processador").innerHTML = " A12 Bionic com arquitetura de 64 bits Neural Engine Coprocessador M12 integrado ";
@@ -89,7 +89,7 @@ function retorno()
               document.getElementById("processador").innerHTML = "  Octa Core 1.8GHz + Kryo 1.60Ghz";
               document.getElementById("sistema").innerHTML = "Android Oreo";
               document.getElementById("tela").innerHTML = "6.0";
-              document.getElementById("resu").innerHTML = "1080 x 2160 IPS LCD";
+              document.getElementById("resu").innerHTML = "1080x2160.IPS/LCD";
               document.getElementById("gps").innerHTML = "Sim";
               document.getElementById("memoINT").innerHTML = "64 GB ";
               document.getElementById("memoDIS").innerHTML = "53.3 GB";
@@ -111,7 +111,7 @@ function retorno()
   </script>
 
 </head>
-<body>
+<body background="IMG/fundocolores.jpg">
    <div class="container">
      <div class="row">
        <div class="col-xs-12">
@@ -138,25 +138,25 @@ function retorno()
              <h1 id="Valor"></h1>
            </div> 
          </div>
-       <div class="row">
-         <div class="col-xs-6">
+       <div class="row decoration">
+         <div class="col-xs-6" >
            <p>Processador:</p><br><hr>
-           <p>Sistema Operacional:</p><br>
+           <p>S.O:</p><br>
            <p>Tela:</p><br>
            <p>Resolução:</p><br>
            <p>GPS:</p><br>
-           <p>Memoria Interna:</p><br>
-           <p>Memoria Disponivel:</p><br>
-           <p>Memoria Expansiva:</p><br>
-           <p>Memoria Ram:</p><br>
+           <p>Mem. Interna:</p><br>
+           <p>Mem. Disp.:</p><br>
+           <p>Mem. Expansiva:</p><br>
+           <p>Mem. Ram:</p><br>
            <p>Tecnologia:</p><br>
-           <p>Camera Frontal:</p><br>
-           <p>Camera Traseira:</p><br>
+           <p>Câmera Front.:</p><br>
+           <p>Câmera Tras.:</p><br>
            <p>Video:</p><br>
            <p>Bateria:</p>
          </div>
            <div class="col-xs-6">
-           <p id="processador"></p><br>
+           <p id="processador"></p><br><br>
            <p id="sistema"></p><br>
            <p id="tela"></p><br>
            <p id="resu"></p><br>

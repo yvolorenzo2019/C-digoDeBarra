@@ -1,8 +1,9 @@
 /**/
 #imgCel{
   max-width: 150px;
-  width: 80%;
+  width: 250x;
   margin-left: 45%;
+  
 }
 .row valor h1{
   text-align: center;
@@ -11,3 +12,21 @@
   text-align: center;
 }
 
+body {
+  background-size: 800px 800px ;
+}
+
+.decoration{
+  
+   background-color: #fff;
+   opacity:0.6;
+   width: auto;
+}
+
+ p{
+   color: #ff0000;
+   font-family: monospace;
+   font-weight: bold;
+   font-size: 15px;
+ }
+ 
