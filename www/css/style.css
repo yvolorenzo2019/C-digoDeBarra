@@ -1,2 +1,13 @@
 /**/
+#imgCel{
+  max-width: 150px;
+  width: 80%;
+  margin-left: 45%;
+}
+.row valor h1{
+  text-align: center;
+}
+.row nome h1{
+  text-align: center;
+}
 
