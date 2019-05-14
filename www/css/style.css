@@ -2,7 +2,8 @@
 #imgCel{
   max-width: 150px;
   width: 250x;
-  margin-left: 45%;
+  margin-left: 25%;
+  margin-top: 5%;
   
 }
 .row valor h1{
@@ -18,15 +19,20 @@ body {
 
 .decoration{
   
-   background-color: #fff;
+   background-color: white;
    opacity:0.6;
-   width: auto;
+   width: 100%;
 }
 
  p{
    color: #ff0000;
    font-family: monospace;
    font-weight: bold;
-   font-size: 15px;
+   font-size: 18px;
+ }
+
+ .result{
+
+   font-size: 10.5px;
  }
  
