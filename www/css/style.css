@@ -37,3 +37,10 @@ p{
    font-size: 10.5px;
  }
  
+ .btn{
+   border-radius: 90px;
+   width: 80%;
+   margin-left: 10%;
+   font-family: monospace;
+
+ }
