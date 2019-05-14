@@ -24,7 +24,7 @@ function retorno()
     function scanBarcode(){
   window.plugins.barcodeScanner.scan(function(result){
       if(result.text == "280720550"){
-                document.getElementById("imgCel").src = ('IMG/A.png');
+                document.getElementById("imgCel").src = ('IMG/ipad.png');
                 document.getElementById("Nome").innerHTML = " iPad Mini Wi-Fi 64Gb - Cinza Espacial";
                 document.getElementById("Valor").innerHTML = "R$ 3.499,00";
                 document.getElementById("processador").innerHTML = " A12 Bionic com arquitetura de 64 bits Neural Engine Coprocessador M12 integrado ";
@@ -43,10 +43,10 @@ function retorno()
                 document.getElementById("bateria").innerHTML = "Litio : 4400 mAh";
               }
        else if(result.text == "989895555"){
-              document.getElementById("imgCel").src = ('IMG/j8.jpeg');
+              document.getElementById("imgCel").src = ('IMG/j8.png');
               document.getElementById("Nome").innerHTML = "Samsung Galaxy J8 Dual Chip";
               document.getElementById("Valor").innerHTML = "R$ 1.888,00";
-              document.getElementById("processador").innerHTML = "  Octa Core 1.8GHz ";
+              document.getElementById("processador").innerHTML = "Octa Core 1.8GHz ";
               document.getElementById("sistema").innerHTML = "Android Oreo 8.0";
               document.getElementById("tela").innerHTML = "6.0";
               document.getElementById("resu").innerHTML = "720 x 1480 Super AMOLED";
@@ -56,14 +56,14 @@ function retorno()
               document.getElementById("memoEXP").innerHTML = "até 256 GB";
               document.getElementById("memoRam").innerHTML = "4 GB";
               document.getElementById("tec").innerHTML = "GSM,Dual,3g,4g e wifi";
-              document.getElementById("cameFront").innerHTML = "16 mpx";
-              document.getElementById("cameTras").innerHTML = "16 mpx + 5 mpx";
+              document.getElementById("cameFront").innerHTML = "16 mp";
+              document.getElementById("cameTras").innerHTML = "16 mp + 5 mp";
               document.getElementById("video").innerHTML = "Full HD";
-              document.getElementById("bateria").innerHTML = "Litio : 3000 mAh";
+              document.getElementById("bateria").innerHTML = "Litio:3000mAh";
 
        } 
        else if(result.text == "85236987"){
-              document.getElementById("imgCel").src = ('IMG/moto.jpeg');
+              document.getElementById("imgCel").src = ('IMG/moto.png');
               document.getElementById("Nome").innerHTML = "Motorola One XT1941 Branco 64GB";
               document.getElementById("Valor").innerHTML = "R$ 2.106,90";
               document.getElementById("processador").innerHTML = "Qualcomm Snapdragon 625 (MSM8953) Octa-Core de 2.0 GHz";
@@ -83,13 +83,13 @@ function retorno()
 
        }
        else if(result.text == "85369877444"){
-              document.getElementById("imgCel").src = ('IMG/zen.jpeg');
+              document.getElementById("imgCel").src = ('IMG/zen.png');
               document.getElementById("Nome").innerHTML = "Asus Zenfone Max Pro M1";
               document.getElementById("Valor").innerHTML = "R$ 1.199,00";
               document.getElementById("processador").innerHTML = "  Octa Core 1.8GHz + Kryo 1.60Ghz";
               document.getElementById("sistema").innerHTML = "Android Oreo";
               document.getElementById("tela").innerHTML = "6.0";
-              document.getElementById("resu").innerHTML = "1080 x 2160 IPS LCD";
+              document.getElementById("resu").innerHTML = "1080x2160.IPS/LCD";
               document.getElementById("gps").innerHTML = "Sim";
               document.getElementById("memoINT").innerHTML = "64 GB ";
               document.getElementById("memoDIS").innerHTML = "53.3 GB";
@@ -100,7 +100,10 @@ function retorno()
               document.getElementById("cameTras").innerHTML = "16 mpx + 5 mpx";
               document.getElementById("video").innerHTML = "Full HD";
               document.getElementById("bateria").innerHTML = "Litio : 5000 mAh";
-       }      
+       }  
+       else{
+         alert ("Código De Barras Invalido");
+       }  
 
           }, function(error){
                 alert("Erro:" + error);
@@ -111,7 +114,7 @@ function retorno()
   </script>
 
 </head>
-<body>
+<body background="IMG/wallpaper.jpg">
    <div class="container">
      <div class="row">
        <div class="col-xs-12">
@@ -120,7 +123,7 @@ function retorno()
        </div>
        <div class="row">
          <div class="col-xs-12">
-           <button class="btn-lg btn-block btn-primary" id="" onclick="scanBarcode()">Ler Código de Barras</button>
+           <button class="btn btn-lg btn-block btn-primary" id="" onclick="scanBarcode()">Ler Código de Barras</button>
          </div>
        </div>
        <div class="row">
@@ -138,40 +141,64 @@ function retorno()
              <h1 id="Valor"></h1>
            </div> 
          </div>
-       <div class="row">
-         <div class="col-xs-6">
-           <p>Processador:</p><br><hr>
-           <p>Sistema Operacional:</p><br>
-           <p>Tela:</p><br>
-           <p>Resolução:</p><br>
-           <p>GPS:</p><br>
-           <p>Memoria Interna:</p><br>
-           <p>Memoria Disponivel:</p><br>
-           <p>Memoria Expansiva:</p><br>
-           <p>Memoria Ram:</p><br>
-           <p>Tecnologia:</p><br>
-           <p>Camera Frontal:</p><br>
-           <p>Camera Traseira:</p><br>
-           <p>Video:</p><br>
-           <p>Bateria:</p>
-         </div>
-           <div class="col-xs-6">
-           <p id="processador"></p><br>
-           <p id="sistema"></p><br>
-           <p id="tela"></p><br>
-           <p id="resu"></p><br>
-           <p id="gps"></p><br>
-           <p id="memoINT"></p><br>
-           <p id="memoDIS"></p><br>
-           <p id="memoEXP"></p><br>
-           <p id="memoRam"></p><br>
-           <p id="tec"></p><br>
-           <p id="cameFront"></p><br>
-           <p id="cameTras"></p><br>
-           <p id="video"></p><br>
-           <p id="bateria"></p>
-         </div>
-       </div>
+       <div
+class="row">
+
+<div
+class="col-xs-6 decoration">
+
+<p>Processador:<p
+id="processador"></p></p><br>
+
+<p>Sistema Operacional:<p
+id="sistema"></p></p><br>
+
+<p>Tela:<p
+id="tela"></p></p><br>
+
+<p>Resolução:<p
+id="resu"></p></p><br>
+
+<p>GPS:<p
+id="gps"></p></p><br>
+
+<p>Memoria Interna:<p
+id="memoINT"></p></p><br>
+
+<p>Memoria Disponivel:<p
+id="memoDIS"></p></p><br>
+
+</div>
+
+<div
+class="col-xs-6">
+
+<p>Memoria Expansiva:<p
+id="memoEXP"></p></p><br>
+
+<p>Memoria Ram:<p
+id="memoRam"></p></p><br>
+
+<p>Tecnologia:<p
+id="tec"></p></p><br>
+
+<p>Camera Frontal:<p
+id="cameFront"></p></p><br>
+
+<p>Camera Traseira:<p
+id="cameTras"></p></p><br>
+
+<p>Video:<p
+id="video"></p></p><br>
+
+<p>Bateria:<p
+id="bateria"></p>
+
+</p>
+
+</div>
+
+</div>
    
        
 

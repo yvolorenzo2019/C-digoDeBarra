@@ -1,13 +1,49 @@
 /**/
 #imgCel{
   max-width: 150px;
-  width: 80%;
-  margin-left: 45%;
+  width: 250x;
+  margin-left: 25%;
+  margin-top: 5%;
+  border-radius: 15px;
+  
 }
-.row valor h1{
+h1{
   text-align: center;
+  color: white;
 }
-.row nome h1{
+h1{
   text-align: center;
+  color: white;
 }
 
+body {
+  background-size: 800px 800px ;
+}
+
+p{
+  
+   background-color:white;
+   opacity:0.9;
+   border-radius: 10px;
+   text-align: center;
+}
+
+ p{
+   color: #007bfd;
+   font-family: monospace;
+   font-weight: bold;
+   font-size: 18px;
+ }
+
+ .result{
+
+   font-size: 10.5px;
+ }
+ 
+ .btn{
+   border-radius: 90px;
+   width: 80%;
+   margin-left: 10%;
+   font-family: monospace;
+
+ }
