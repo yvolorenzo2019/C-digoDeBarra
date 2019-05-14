@@ -17,15 +17,16 @@ body {
   background-size: 800px 800px ;
 }
 
-.decoration{
+p{
   
-   background-color: white;
-   opacity:0.6;
-   width: 100%;
+   background-color:white;
+   opacity:0.9;
+   border-radius: 10px;
+   text-align: center;
 }
 
  p{
-   color: #ff0000;
+   color: #007bfd;
    font-family: monospace;
    font-weight: bold;
    font-size: 18px;
