@@ -24,7 +24,7 @@ function retorno()
     function scanBarcode(){
   window.plugins.barcodeScanner.scan(function(result){
       if(result.text == "280720550"){
-                document.getElementById("imgCel").src = ('IMG/ipad.jpg');
+                document.getElementById("imgCel").src = ('IMG/ipad.png');
                 document.getElementById("Nome").innerHTML = " iPad Mini Wi-Fi 64Gb - Cinza Espacial";
                 document.getElementById("Valor").innerHTML = "R$ 3.499,00";
                 document.getElementById("processador").innerHTML = " A12 Bionic com arquitetura de 64 bits Neural Engine Coprocessador M12 integrado ";
@@ -43,7 +43,7 @@ function retorno()
                 document.getElementById("bateria").innerHTML = "Litio : 4400 mAh";
               }
        else if(result.text == "989895555"){
-              document.getElementById("imgCel").src = ('IMG/j8.jpeg');
+              document.getElementById("imgCel").src = ('IMG/j8.png');
               document.getElementById("Nome").innerHTML = "Samsung Galaxy J8 Dual Chip";
               document.getElementById("Valor").innerHTML = "R$ 1.888,00";
               document.getElementById("processador").innerHTML = "Octa Core 1.8GHz ";
@@ -63,7 +63,7 @@ function retorno()
 
        } 
        else if(result.text == "85236987"){
-              document.getElementById("imgCel").src = ('IMG/moto.jpeg');
+              document.getElementById("imgCel").src = ('IMG/moto.png');
               document.getElementById("Nome").innerHTML = "Motorola One XT1941 Branco 64GB";
               document.getElementById("Valor").innerHTML = "R$ 2.106,90";
               document.getElementById("processador").innerHTML = "Qualcomm Snapdragon 625 (MSM8953) Octa-Core de 2.0 GHz";
@@ -83,7 +83,7 @@ function retorno()
 
        }
        else if(result.text == "85369877444"){
-              document.getElementById("imgCel").src = ('IMG/zen.jpeg');
+              document.getElementById("imgCel").src = ('IMG/zen.png');
               document.getElementById("Nome").innerHTML = "Asus Zenfone Max Pro M1";
               document.getElementById("Valor").innerHTML = "R$ 1.199,00";
               document.getElementById("processador").innerHTML = "  Octa Core 1.8GHz + Kryo 1.60Ghz";
@@ -100,7 +100,10 @@ function retorno()
               document.getElementById("cameTras").innerHTML = "16 mpx + 5 mpx";
               document.getElementById("video").innerHTML = "Full HD";
               document.getElementById("bateria").innerHTML = "Litio : 5000 mAh";
-       }      
+       }  
+       else{
+         alert ("Código De Barras Invalido");
+       }  
 
           }, function(error){
                 alert("Erro:" + error);

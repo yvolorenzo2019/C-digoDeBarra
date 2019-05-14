@@ -4,13 +4,16 @@
   width: 250x;
   margin-left: 25%;
   margin-top: 5%;
+  border-radius: 15px;
   
 }
-.row valor h1{
+h1{
   text-align: center;
+  color: white;
 }
-.row nome h1{
+h1{
   text-align: center;
+  color: white;
 }
 
 body {
